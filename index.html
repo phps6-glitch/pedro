@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da Memória - Heróis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MENU -->
+<div id="menu">
+  <h1>🦸 Jogo da Memória</h1>
+  <button onclick="showLevels()">▶ Jogar</button>
+</div>
+
+<!-- NÍVEIS -->
+<div id="levels" class="hidden">
+  <h2>Escolha o nível</h2>
+  <button onclick="startGame(16)">Fácil</button>
+  <button onclick="startGame(36)">Médio</button>
+  <button onclick="startGame(64)">Difícil</button>
+</div>
+
+<!-- JOGO -->
+<div id="game" class="hidden">
+  <h2>Encontre os pares!</h2>
+  <p id="score">Erros: 0 | Acertos: 0</p>
+  <p id="timer">Tempo: 0s</p>
+
+  <div class="game-board" id="board"></div>
+
+  <button onclick="goToMenu()">⬅ Voltar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
